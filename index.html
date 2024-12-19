@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#" class="back-button">&larr; Voltar</a>
+      <h1>Compras da semana</h1>
+    </header>
+
+    <main>
+      <div class="add-item">
+        <input
+          type="text"
+          id="new-item"
+          placeholder="Adicione um novo item"
+          maxlength="50"
+        />
+        <button id="add-button">Adicionar item</button>
+      </div>
+
+      <ul id="shopping-list">
+        <!-- Itens serão inseridos dinamicamente -->
+      </ul>
+
+      <div id="message" class="hidden">O item foi removido da lista</div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
